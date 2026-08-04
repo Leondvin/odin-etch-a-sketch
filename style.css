@@ -4,3 +4,8 @@
     display: flex;
     flex-wrap: wrap;
 }
+.box {
+    --box-per-side: 16;
+    width: calc(480px / var(--box-per-side));
+    height: calc(480px / var(--box-per-side));
+}
