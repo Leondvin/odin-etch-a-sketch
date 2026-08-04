@@ -19,3 +19,12 @@ const updateBoxes = boxPerSide => {
 updateBoxes(currSize);
 
 const removeBoxes = () => boxContainer.replaceChildren();
+
+resizeBtn.addEventListener("click", e => {
+    const newSize = parseInt(prompt("Enter the new size up to 100", currSize));
+    if (!newSize || newSize > 100) return;
+    currSize = newSize;
+    removeBoxes();
+    addBoxes(currSize);
+    updateBoxes(currSize);
+});
