@@ -1,3 +1,7 @@
+:root {
+    --box-per-side: 16;
+    --fill-color: #000000;
+}
 #box-container {
     width: 480px;
     height: 480px;
@@ -5,11 +9,9 @@
     flex-wrap: wrap;
 }
 .box {
-    --box-per-side: 16;
     width: calc(480px / var(--box-per-side));
     height: calc(480px / var(--box-per-side));
 }
 .filled {
-    --fill-color: #000000;
     background: var(--fill-color);
 }
