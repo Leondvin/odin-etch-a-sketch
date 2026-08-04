@@ -17,3 +17,5 @@ const updateBoxes = boxPerSide => {
     getBoxes().forEach(box => box.addEventListener("mouseenter", e => e.target.classList.add("filled")));
 };
 updateBoxes(currSize);
+
+const removeBoxes = () => boxContainer.replaceChildren();
