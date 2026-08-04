@@ -1,0 +1,1 @@
+const boxContainer = document.querySelector("#box-container");
