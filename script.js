@@ -11,8 +11,9 @@ const addBoxes = boxPerSide => {
 };
 addBoxes(currSize);
 
-const updateBoxes = () => {
+const updateBoxes = boxPerSide => {
+    document.documentElement.style.setProperty("--box-per-side", `${boxPerSide}`);
     const getBoxes = () => document.querySelectorAll(".box");
     getBoxes().forEach(box => box.addEventListener("mouseenter", e => e.target.classList.add("filled")));
 };
-updateBoxes();
+updateBoxes(currSize);
