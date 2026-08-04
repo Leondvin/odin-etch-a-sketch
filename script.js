@@ -6,3 +6,4 @@ for (let i = 0; i < 16**2; i++) {
     boxContainer.appendChild(box);
 }
 const getBoxes = () => document.querySelectorAll(".box");
+getBoxes().forEach(box => box.addEventListener("mouseenter", e => e.target.classList.add("filled")));
