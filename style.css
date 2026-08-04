@@ -9,3 +9,7 @@
     width: calc(480px / var(--box-per-side));
     height: calc(480px / var(--box-per-side));
 }
+.filled {
+    --fill-color: #000000;
+    background: var(--fill-color);
+}
