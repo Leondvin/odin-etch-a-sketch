@@ -1,4 +1,5 @@
 const boxContainer = document.querySelector("#box-container");
+const resizeBtn = document.querySelector("#resize-btn");
 
 for (let i = 0; i < 16**2; i++) {
     const box = document.createElement("div");
