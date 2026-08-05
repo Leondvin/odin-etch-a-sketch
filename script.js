@@ -20,6 +20,13 @@ updateBoxes(currSize);
 
 const removeBoxes = () => boxContainer.replaceChildren();
 
+const getRndColor = () => {
+    const rndR = Math.floor(Math.random() * 256);
+    const rndG = Math.floor(Math.random() * 256);
+    const rndB = Math.floor(Math.random() * 256);
+    return `rgb(${rndR}, ${rndG}, ${rndB})`;
+};
+
 resizeBtn.addEventListener("click", e => {
     const newSize = parseInt(prompt("Enter the new size up to 100", currSize));
     if (!newSize || newSize > 100) return;
