@@ -13,8 +13,8 @@ addBoxes(currSize);
 
 const updateBoxes = boxPerSide => {
     document.documentElement.style.setProperty("--box-per-side", `${boxPerSide}`);
-    const getBoxes = () => document.querySelectorAll(".box");
-    getBoxes().forEach(box => box.addEventListener("mouseenter", e => {
+    const boxes = document.querySelectorAll(".box");
+    boxes.forEach(box => box.addEventListener("mouseenter", e => {
         e.target.classList.add("filled");
         e.target.style.setProperty("--fill-color", getRndColor());
     }));
