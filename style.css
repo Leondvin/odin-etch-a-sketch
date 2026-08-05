@@ -15,4 +15,5 @@
 }
 .filled {
     background: var(--fill-color);
+    opacity: var(--box-opacity);
 }
