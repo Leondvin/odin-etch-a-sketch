@@ -1,6 +1,7 @@
 :root {
     --box-per-side: 16;
     --fill-color: #000000;
+    --box-opacity: 0;
 }
 #box-container {
     width: 480px;
