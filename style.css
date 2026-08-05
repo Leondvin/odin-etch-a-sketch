@@ -8,6 +8,7 @@
     height: 480px;
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid;
 }
 .box {
     width: calc(480px / var(--box-per-side));
