@@ -17,6 +17,8 @@ const updateBoxes = boxPerSide => {
     boxes.forEach(box => box.addEventListener("mouseenter", e => {
         e.target.classList.add("filled");
         e.target.style.setProperty("--fill-color", getRndColor());
+        const boxOpacity = parseFloat(e.target.style.getPropertyValue("--box-opacity")) || 0;
+        if (boxOpacity < 1) e.target.style.setProperty("--box-opacity", `${boxOpacity + 0.1}`);
     }));
 };
 updateBoxes(currSize);
